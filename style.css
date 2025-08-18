@@ -1,0 +1,81 @@
+/* General Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container */
+.game-container {
+  text-align: center;
+  background: #ffffffdd;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+/* Game Board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Each Cell */
+.cell {
+  background-color: #ffe0f0;
+  border: 3px solid #ff7eb9;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff2e63;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.cell:hover {
+  background-color: #ffd6e8;
+  transform: scale(1.05);
+}
+
+/* Status Text */
+.status {
+  font-size: 1.4rem;
+  color: #444;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Reset Button */
+button {
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: #ff2e63;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #e91e63;
+}
